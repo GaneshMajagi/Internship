@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration & Login</title>
+    <link rel="stylesheet" href="reg.css">
+
+</head>
+<body>
+
+<!-- Registration Form -->
+<div id="registration" class="container">
+    <h2>Registration Form</h2>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="register()">Register</button>
+</div>
+
+<!-- Login Form -->
+<div id="login" class="container">
+    <h2>Login Form</h2>
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button class="login-btn" onclick="login()">Login</button>
+</div>
+
+<!-- Welcome Page -->
+<div id="welcome" class="container">
+    <h2 id="welcomeMessage"></h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<script src="reg.js"></script>
+
+</body>
+</html>
